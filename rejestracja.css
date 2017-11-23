@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: #2C3E50;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#left {
+    width: 50%;
+    float: left;
+}
+
+#right {
+    float: right;
+    width: 50%;
+    font-family: 'Autour One', cursive;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 65px;
+}
+
+#right p {
+    padding: 0 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+}
+
+#formularz {
+    background-color: #22313F;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top 20px;
+    width: 322px;
+}
+
+#formularz label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#formularz input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-bottom: 25px;
+    background-color: #2C3E50;
+}
+
+#formularz input#submit {
+    width: 320px;
+    cursor: pointer;
+    /* zmieniamy kursor */
+    margin-bottom: 0px;
+    margin-top: 10px;
+    background-color: #26A65B;
+}
+
+@media (max-width: 1000px) {
+    #left,
+    #right {
+        width: 100%;
+        float: none;
+
+    }
+}
+
+@media (max-width: 460px) {
+    #formularz {
+        width: 300px;
+    }
+    #formularz input {
+        width: 278px;
+    }
+    #formularz input#submit {
+        width: 298px;
+    }
+
+    header h1{
+        font-size:40px;
+    }
+}
+@media (max-width:400px) {
+    article
+    {
+        width:100%;
+    }
+}
+@media (min-width: 1600px) {
+    header h1 {
+        font-size:100px;
+    }
+    #formularz input {
+        width: 278px;
+    }
+    #formularz {
+        width: 400px;
+    }
+    #formularz input {
+        width: 378px;
+    }
+    #formularz input#submit {
+        width: 398px;
+    }
+    #right p{
+        font-size:40px;
+        line-height: normal;
+    }
+}
